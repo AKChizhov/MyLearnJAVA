@@ -10,7 +10,6 @@ public class SoundUtils {
     {
         tone(hz, msecs, 1.0);
     }
-
     public static void tone(int hz, int msecs, double vol)
             throws LineUnavailableException
     {
@@ -34,7 +33,6 @@ public class SoundUtils {
         sdl.stop();
         sdl.close();
     }
-
     public static void main(String[] args) throws Exception {
         SoundUtils.tone(1000,100);
         Thread.sleep(1000);
@@ -45,6 +43,5 @@ public class SoundUtils {
         SoundUtils.tone(400,500);
         Thread.sleep(1000);
         SoundUtils.tone(400,500, 0.2);
-
     }
 }
